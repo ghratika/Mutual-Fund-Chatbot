@@ -73,6 +73,17 @@ class MutualFundRetrievalEngine:
             
         # Connect to ChromaDB
         self.db_manager = VectorDBManager(db_dir=db_dir, collection_name=collection_name)
+        
+        # Auto-seed the database if the collection is empty
+        try:
+            count = self.db_manager.collection.count()
+            if count == 0:
+                log_info("ChromaDB collection is empty. Auto-seeding database from data/corpus.json...")
+                from db_manager import main as seed_db
+                seed_db()
+        except Exception as e:
+            log_error(f"Error checking or seeding database: {e}")
+
         log_success("MutualFundRetrievalEngine initialized successfully.")
 
     def extract_scheme_name(self, query: str):

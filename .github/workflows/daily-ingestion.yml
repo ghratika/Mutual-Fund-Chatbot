@@ -1,0 +1,49 @@
+name: Daily Data Ingestion
+
+on:
+  schedule:
+    # 10:00 AM IST is 4:30 AM UTC (IST is UTC + 5:30)
+    - cron: '30 4 * * *'
+  workflow_dispatch: # Allows manual trigger from the GitHub Actions tab
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Ingestion Pipeline
+        env:
+          # HF_TOKEN and GROQ_API_KEY can be provided here if needed by any embedding/validation steps
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          python run_ingestion.py --now
+
+      - name: Commit and Push Updated Corpus
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/corpus.json
+          # Check if there are changes before committing to avoid workflow failure
+          if git diff --staged --quiet; then
+            echo "No changes in data/corpus.json"
+          else
+            git commit -m "chrono: daily data ingestion update [skip ci]"
+            git push
+          fi
