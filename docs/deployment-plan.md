@@ -173,21 +173,27 @@ This allows:
 
 ### 2.4 CORS Configuration
 
-The FastAPI backend already allows all origins via its CORS middleware (`allow_origins=["*"]`). For production hardening, you can restrict it to only the Vercel domain:
+The FastAPI backend now reads the allowed origin from a **Railway environment variable** `CORS_ORIGINS`. Set it after you have your Vercel URL:
 
-```python
-# In server.py, replace ["*"] with your Vercel domain:
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["https://<your-project>.vercel.app"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+**Railway Variable to add (after Vercel is deployed):**
+
+| Variable | Value | Notes |
+|----------|-------|-------|
+| `CORS_ORIGINS` | `https://<your-project>.vercel.app` | Comma-separated if multiple domains |
+
+If `CORS_ORIGINS` is not set, the server defaults to `"*"` (open) — safe for testing, but lock it down in production.
+
+### 2.5 SPA Routing (`vercel.json`)
+
+A `frontend/vercel.json` has been created that rewrites all non-API routes to `index.html`, so direct URL access works correctly on Vercel:
+
+```json
+{
+  "rewrites": [
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ]
+}
 ```
-
-> [!TIP]
-> You can keep `["*"]` during initial testing and tighten it later.
 
 ---
 
@@ -231,10 +237,13 @@ Go to **GitHub → Repository → Settings → Secrets and variables → Actions
 
 | Action | File | Description |
 |--------|------|-------------|
-| **CREATE** | `Procfile` | Railway start command |
-| **CREATE** | `runtime.txt` | Python version pin |
-| **MODIFY** | `frontend/src/App.jsx` (line 13) | Use `import.meta.env.VITE_API_BASE_URL` |
-| *(Already exists)* | `requirements.txt` | Python dependencies |
+| ✅ **Done** | `Procfile` | Railway start command |
+| ✅ **Done** | `runtime.txt` | Python version pin (`python-3.10.14`) |
+| ✅ **Done** | `railway.json` | Healthcheck path `/health`, 120s timeout, restart policy |
+| ✅ **Done** | `frontend/vercel.json` | SPA rewrite rules for React client-side routing |
+| ✅ **Done** | `frontend/src/App.jsx` (line 13) | Uses `import.meta.env.VITE_API_BASE_URL` |
+| ✅ **Done** | `requirements.txt` | Added `uvicorn[standard]` + `python-dotenv` |
+| ✅ **Done** | `server.py` | Lifespan init, `/health` endpoint, `CORS_ORIGINS` env var |
 | *(Already exists)* | `.github/workflows/daily-ingestion.yml` | Cron scheduler |
 
 ### Step-by-Step Deploy Order

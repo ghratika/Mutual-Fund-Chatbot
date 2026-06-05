@@ -1,9 +1,10 @@
 import os
 import sys
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 
@@ -14,28 +15,51 @@ from intent_classifier import IntentClassifier, UserIntent
 from retrieval import MutualFundRetrievalEngine
 from guardrails import GroqGuardrailClient
 
-app = FastAPI(title="Mutual Fund RAG Chatbot API")
+# ---------------------------------------------------------------------------
+# Lifespan: initialise heavy components once on startup
+# ---------------------------------------------------------------------------
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    global classifier, retrieval_engine, guardrail_client
+    try:
+        print("[INFO] Initialising backend components...")
+        classifier = IntentClassifier()
+        retrieval_engine = MutualFundRetrievalEngine()
+        guardrail_client = GroqGuardrailClient()
+        print("[SUCCESS] All backend components ready.")
+    except Exception as e:
+        print(f"[ERROR] Failed to initialise backend: {e}")
+        classifier = None
+        retrieval_engine = None
+        guardrail_client = None
+    yield  # server is running
 
-# Enable CORS for the frontend
+app = FastAPI(title="Mutual Fund RAG Chatbot API", lifespan=lifespan)
+
+# ---------------------------------------------------------------------------
+# CORS — driven by env var so Vercel domain can be locked in production
+# CORS_ORIGINS="https://your-project.vercel.app" in Railway Variables
+# Leave unset (or "*") for local development / testing
+# ---------------------------------------------------------------------------
+_raw_origins = os.environ.get("CORS_ORIGINS", "*")
+ALLOWED_ORIGINS: list[str] = (
+    [o.strip() for o in _raw_origins.split(",") if o.strip()]
+    if _raw_origins != "*"
+    else ["*"]
+)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"], # Allow all origins for simplicity, can narrow down in production
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Initialize engines
-try:
-    classifier = IntentClassifier()
-    retrieval_engine = MutualFundRetrievalEngine()
-    guardrail_client = GroqGuardrailClient()
-except Exception as e:
-    print(f"Error initializing backend components: {e}")
-    # Initialize with None to avoid startup crash, will handle at request time
-    classifier = None
-    retrieval_engine = None
-    guardrail_client = None
+# Module-level placeholders (populated inside lifespan above)
+classifier = None
+retrieval_engine = None
+guardrail_client = None
 
 class ChatRequest(BaseModel):
     message: str
@@ -164,7 +188,27 @@ async def get_funds():
         })
     return funds_info
 
-# Serve the production build of the frontend at the root path if it exists
+@app.get("/health")
+async def health_check():
+    """
+    Railway health check endpoint.
+    Returns 200 when all backend components are ready, 503 otherwise.
+    """
+    ready = all([classifier, retrieval_engine, guardrail_client])
+    fund_count = len(retrieval_engine.corpus) if retrieval_engine else 0
+    payload = {
+        "status": "ok" if ready else "degraded",
+        "components": {
+            "intent_classifier": classifier is not None,
+            "retrieval_engine": retrieval_engine is not None,
+            "guardrail_client": guardrail_client is not None,
+        },
+        "funds_loaded": fund_count,
+    }
+    status_code = 200 if ready else 503
+    return JSONResponse(content=payload, status_code=status_code)
+
+
 dist_path = os.path.join(os.path.dirname(__file__), "frontend", "dist")
 if os.path.exists(dist_path):
     @app.get("/")
