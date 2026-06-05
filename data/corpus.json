@@ -1,0 +1,179 @@
+[
+  {
+    "scheme_name": "HDFC Mid Cap Fund Direct Growth",
+    "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+    "category": "Equity",
+    "sub_category": "Mid Cap",
+    "nav": 219.942,
+    "nav_date": "04-Jun-2026",
+    "expense_ratio": "0.73",
+    "exit_load": "Exit load of 1% if redeemed within 1 year.",
+    "min_sip": 100,
+    "riskometer": "Moderately High",
+    "benchmark": "NIFTY Midcap 150 TRI",
+    "description": "The scheme seeks to provide long-term capital appreciation/income by investing predominantly in Mid-Cap companies.",
+    "fund_managers": [
+      {
+        "name": "Chirag Setalvad",
+        "education": "Mr. Setalvad is a B. Sc and MBA from University of North Carolina.",
+        "experience": "Prior to joining HDFC AMC he has worked with New Vernon Advisory Services Ltd., HDFC AMC and ING Barings N.V.",
+        "date_from": "2012-12-31T18:30:00.000Z",
+        "funds_managed_count": 3
+      },
+      {
+        "name": "Dhruv Muchhal",
+        "education": "Mr. Dhruv has done B.Com, CA and CFA",
+        "experience": "Prior to joining HDFC MF,he has worked with Motilal Oswal Financial Services Ltd., Goldman Sachs, CRISIL Global Research & Analytics and Deloitte Haskins & Sells",
+        "date_from": "2023-06-21T18:30:00.000Z",
+        "funds_managed_count": 46
+      }
+    ],
+    "aum": 94744.7175,
+    "return_1m": 0.65,
+    "return_6m": -1.93,
+    "return_1y": 5.51
+  },
+  {
+    "scheme_name": "HDFC Large Cap Fund Direct Growth",
+    "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
+    "category": "Equity",
+    "sub_category": "Large Cap",
+    "nav": 1166.33,
+    "nav_date": "04-Jun-2026",
+    "expense_ratio": "0.99",
+    "exit_load": "Exit load of 1% if redeemed within 1 year",
+    "min_sip": 100,
+    "riskometer": "Moderately High Riskometer",
+    "benchmark": "NIFTY 100 TRI",
+    "description": "The scheme seeks to provide long-term capital appreciation/income by investing predominantly in Large-Cap companies.",
+    "fund_managers": [
+      {
+        "name": "Rahul Baijal",
+        "education": "Mr. Baijal has done PGDM(MBA) from IIM Calcutta and is an engineering graduate of Delhi college of Engineering",
+        "experience": "Prior to joining HDFC Mutual Fund, he has worked with Sundaram Mutual Fund, Bharti AXA Life Insurance, TVF Capital, HSBC Securities, Credit Suisse Securities & Standard Chartered Bank.",
+        "date_from": "2022-07-28T18:30:00.000Z",
+        "funds_managed_count": 3
+      },
+      {
+        "name": "Dhruv Muchhal",
+        "education": "Mr. Dhruv has done B.Com, CA and CFA",
+        "experience": "Prior to joining HDFC MF,he has worked with Motilal Oswal Financial Services Ltd., Goldman Sachs, CRISIL Global Research & Analytics and Deloitte Haskins & Sells",
+        "date_from": "2023-06-21T18:30:00.000Z",
+        "funds_managed_count": 46
+      }
+    ],
+    "aum": 38121.2733,
+    "return_1m": -2.18,
+    "return_6m": -8.25,
+    "return_1y": -3.19
+  },
+  {
+    "scheme_name": "HDFC Small Cap Fund Direct Growth",
+    "url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
+    "category": "Equity",
+    "sub_category": "Small Cap",
+    "nav": 152.199,
+    "nav_date": "04-Jun-2026",
+    "expense_ratio": "0.73",
+    "exit_load": "Exit load of 1% if redeemed within 1 year",
+    "min_sip": 100,
+    "riskometer": "Moderately High Riskometer",
+    "benchmark": "BSE 250 SmallCap TRI",
+    "description": "The scheme seeks to provide long-term capital appreciation /income by investing predominantly in Small-Cap companies.",
+    "fund_managers": [
+      {
+        "name": "Dhruv Muchhal",
+        "education": "Mr. Dhruv has done B.Com, CA and CFA",
+        "experience": "Prior to joining HDFC MF,he has worked with Motilal Oswal Financial Services Ltd., Goldman Sachs, CRISIL Global Research & Analytics and Deloitte Haskins & Sells",
+        "date_from": "2023-06-21T18:30:00.000Z",
+        "funds_managed_count": 46
+      },
+      {
+        "name": "Chirag Setalvad",
+        "education": "Mr. Setalvad is a B. Sc and MBA from University of North Carolina.",
+        "experience": "Prior to joining HDFC AMC he has worked with New Vernon Advisory Services Ltd., HDFC AMC and ING Barings N.V.",
+        "date_from": "2014-06-27T18:30:00.000Z",
+        "funds_managed_count": 3
+      }
+    ],
+    "aum": 38168.1786,
+    "return_1m": -0.04,
+    "return_6m": -4.52,
+    "return_1y": -1.69
+  },
+  {
+    "scheme_name": "HDFC Gold ETF Fund of Fund Direct Plan Growth",
+    "url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
+    "category": "Commodities",
+    "sub_category": "Gold",
+    "nav": 48.4552,
+    "nav_date": "04-Jun-2026",
+    "expense_ratio": "0.2",
+    "exit_load": "Exit load of 1%, if redeemed within 15 days.",
+    "min_sip": 100,
+    "riskometer": "Moderately High Riskometer",
+    "benchmark": "Domestic Price of Gold",
+    "description": "The Scheme seeks to generate capital appreciation by investing in units of HDFC Gold Exchange Traded Fund.",
+    "fund_managers": [
+      {
+        "name": "Arun Agarwal",
+        "education": "Mr. Agarwal is a B.Com. and Chartered Accountant",
+        "experience": "Prior to joining HDFC Asset Management Company Limited, he has worked with SBI Funds Management Pvt. Ltd., ICICI Bank Limited, UTI Asset Management Pvt. Ltd.",
+        "date_from": "2023-02-14T18:30:00.000Z",
+        "funds_managed_count": 31
+      },
+      {
+        "name": "Nandita Menezes",
+        "education": "CA (ICAI, INDIA), B.Com (University of Mumbai)",
+        "experience": "Prior to joining HDFC AMC, she was associated with S.V. Ghatalia & Associates LLP.",
+        "date_from": "2025-03-28T18:30:00.000Z",
+        "funds_managed_count": 29
+      }
+    ],
+    "aum": 11464.3532,
+    "return_1m": 4.81,
+    "return_6m": 20.93,
+    "return_1y": 57.91
+  },
+  {
+    "scheme_name": "HDFC Defence Fund Direct Growth",
+    "url": "https://groww.in/mutual-funds/hdfc-defence-fund-direct-growth",
+    "category": "Equity",
+    "sub_category": "Thematic",
+    "nav": 28.714,
+    "nav_date": "04-Jun-2026",
+    "expense_ratio": "0.83",
+    "exit_load": "Exit load of 1%, if redeemed within 1 year.",
+    "min_sip": 100,
+    "riskometer": "Very High",
+    "benchmark": "Nifty India Defence TRI",
+    "description": "The scheme seeks to provide long-term capital appreciation by investing predominantly in equity and equity related securities of Defence & allied sector companies.",
+    "fund_managers": [
+      {
+        "name": "Priya Ranjan",
+        "education": "Mr. Ranjan is B.E(Computer Science) and PGDBM (Finance).",
+        "experience": "He has over 14 years of experience in equity research.",
+        "date_from": "2025-04-17T18:30:00.000Z",
+        "funds_managed_count": 4
+      },
+      {
+        "name": "Dhruv Muchhal",
+        "education": "Mr. Dhruv has done B.Com, CA and CFA",
+        "experience": "Prior to joining HDFC MF,he has worked with Motilal Oswal Financial Services Ltd., Goldman Sachs, CRISIL Global Research & Analytics and Deloitte Haskins & Sells",
+        "date_from": "2023-06-21T18:30:00.000Z",
+        "funds_managed_count": 46
+      },
+      {
+        "name": "Rahul Baijal",
+        "education": "Mr. Baijal has done PGDM(MBA) from IIM Calcutta and is an engineering graduate of Delhi college of Engineering",
+        "experience": "Prior to joining HDFC Mutual Fund, he has worked with Sundaram Mutual Fund, Bharti AXA Life Insurance, TVF Capital, HSBC Securities, Credit Suisse Securities & Standard Chartered Bank.",
+        "date_from": "2025-04-17T18:30:00.000Z",
+        "funds_managed_count": 3
+      }
+    ],
+    "aum": 9123.6053,
+    "return_1m": 3.92,
+    "return_6m": 18.85,
+    "return_1y": 10.98
+  }
+]

@@ -1,0 +1,28 @@
+# Environments
+.env
+.env.local
+.env.*
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Databases / ChromaDB
+db/
+chroma.sqlite3
+
+# Node modules, scratch and build output (just in case they are not caught by subfolders)
+node_modules/
+dist/
+scratch/
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
