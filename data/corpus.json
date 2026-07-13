@@ -63,9 +63,9 @@
       }
     ],
     "aum": 39023.6868,
-    "return_1m": 6.67,
-    "return_6m": -2.61,
-    "return_1y": -0.2
+    "return_1m": 6.673152741,
+    "return_6m": -2.6057100558,
+    "return_1y": -0.1981872644
   },
   {
     "scheme_name": "HDFC Small Cap Fund Direct Growth",
@@ -97,9 +97,9 @@
       }
     ],
     "aum": 40416.8045,
-    "return_1m": 5.8,
-    "return_6m": 3.34,
-    "return_1y": -0.98
+    "return_1m": 5.7973501977,
+    "return_6m": 3.3447684391,
+    "return_1y": -0.9786900135
   },
   {
     "scheme_name": "HDFC Gold ETF Fund of Fund Direct Plan Growth",
