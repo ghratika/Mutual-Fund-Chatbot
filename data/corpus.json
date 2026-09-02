@@ -4,8 +4,8 @@
     "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
     "category": "Equity",
     "sub_category": "Mid Cap",
-    "nav": 237.519,
-    "nav_date": "31-Aug-2026",
+    "nav": 236.391,
+    "nav_date": "01-Sep-2026",
     "expense_ratio": "0.74",
     "exit_load": "Exit load of 1% if redeemed within 1 year.",
     "min_sip": 100,
@@ -18,28 +18,28 @@
         "education": "Mr. Setalvad is a B. Sc and MBA from University of North Carolina.",
         "experience": "Prior to joining HDFC AMC he has worked with New Vernon Advisory Services Ltd., HDFC AMC and ING Barings N.V.",
         "date_from": "2012-12-31T18:30:00.000Z",
-        "funds_managed_count": 3
+        "funds_managed_count": 6
       },
       {
         "name": "Dhruv Muchhal",
         "education": "Mr. Dhruv has done B.Com, CA and CFA",
         "experience": "Prior to joining HDFC MF,he has worked with Motilal Oswal Financial Services Ltd., Goldman Sachs, CRISIL Global Research & Analytics and Deloitte Haskins & Sells",
         "date_from": "2023-06-21T18:30:00.000Z",
-        "funds_managed_count": 46
+        "funds_managed_count": 43
       }
     ],
     "aum": 105142.6943,
-    "return_1m": 1.73,
-    "return_6m": 6.06,
-    "return_1y": 13.39
+    "return_1m": 1.24,
+    "return_6m": 5.55,
+    "return_1y": 11.63
   },
   {
     "scheme_name": "HDFC Large Cap Fund Direct Growth",
     "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
     "category": "Equity",
     "sub_category": "Large Cap",
-    "nav": 1243.32,
-    "nav_date": "31-Aug-2026",
+    "nav": 1237.344,
+    "nav_date": "01-Sep-2026",
     "expense_ratio": "1.02",
     "exit_load": "Exit load of 1% if redeemed within 1 year",
     "min_sip": 100,
@@ -59,21 +59,21 @@
         "education": "Mr. Dhruv has done B.Com, CA and CFA",
         "experience": "Prior to joining HDFC MF,he has worked with Motilal Oswal Financial Services Ltd., Goldman Sachs, CRISIL Global Research & Analytics and Deloitte Haskins & Sells",
         "date_from": "2023-06-21T18:30:00.000Z",
-        "funds_managed_count": 46
+        "funds_managed_count": 43
       }
     ],
     "aum": 40197.8895,
-    "return_1m": -0.38,
-    "return_6m": -1.18,
-    "return_1y": 3.19
+    "return_1m": -0.86,
+    "return_6m": -1.66,
+    "return_1y": 1.8
   },
   {
     "scheme_name": "HDFC Small Cap Fund Direct Growth",
     "url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
     "category": "Equity",
     "sub_category": "Small Cap",
-    "nav": 160.949,
-    "nav_date": "31-Aug-2026",
+    "nav": 160.972,
+    "nav_date": "01-Sep-2026",
     "expense_ratio": "0.75",
     "exit_load": "Exit load of 1% if redeemed within 1 year",
     "min_sip": 100,
@@ -86,28 +86,28 @@
         "education": "Mr. Dhruv has done B.Com, CA and CFA",
         "experience": "Prior to joining HDFC MF,he has worked with Motilal Oswal Financial Services Ltd., Goldman Sachs, CRISIL Global Research & Analytics and Deloitte Haskins & Sells",
         "date_from": "2023-06-21T18:30:00.000Z",
-        "funds_managed_count": 46
+        "funds_managed_count": 43
       },
       {
         "name": "Chirag Setalvad",
         "education": "Mr. Setalvad is a B. Sc and MBA from University of North Carolina.",
         "experience": "Prior to joining HDFC AMC he has worked with New Vernon Advisory Services Ltd., HDFC AMC and ING Barings N.V.",
         "date_from": "2014-06-27T18:30:00.000Z",
-        "funds_managed_count": 3
+        "funds_managed_count": 6
       }
     ],
     "aum": 41679.0037,
-    "return_1m": 0.12,
-    "return_6m": 5.19,
-    "return_1y": 1.54
+    "return_1m": 0.14,
+    "return_6m": 5.21,
+    "return_1y": 0.25
   },
   {
     "scheme_name": "HDFC Gold ETF Fund of Fund Direct Plan Growth",
     "url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
     "category": "Commodities",
     "sub_category": "Gold",
-    "nav": 48.1076,
-    "nav_date": "31-Aug-2026",
+    "nav": 47.3372,
+    "nav_date": "01-Sep-2026",
     "expense_ratio": "0.2",
     "exit_load": "Exit load of 1%, if redeemed within 15 days.",
     "min_sip": 100,
@@ -131,17 +131,17 @@
       }
     ],
     "aum": 11197.0455,
-    "return_1m": 8.91,
-    "return_6m": -3.2,
-    "return_1y": 49.11
+    "return_1m": 7.16,
+    "return_6m": -4.75,
+    "return_1y": 44.74
   },
   {
     "scheme_name": "HDFC Defence Fund Direct Growth",
     "url": "https://groww.in/mutual-funds/hdfc-defence-fund-direct-growth",
     "category": "Equity",
     "sub_category": "Thematic",
-    "nav": 31.609,
-    "nav_date": "31-Aug-2026",
+    "nav": 31.422,
+    "nav_date": "01-Sep-2026",
     "expense_ratio": "0.89",
     "exit_load": "Exit load of 1%, if redeemed within 1 year.",
     "min_sip": 100,
@@ -161,7 +161,7 @@
         "education": "Mr. Dhruv has done B.Com, CA and CFA",
         "experience": "Prior to joining HDFC MF,he has worked with Motilal Oswal Financial Services Ltd., Goldman Sachs, CRISIL Global Research & Analytics and Deloitte Haskins & Sells",
         "date_from": "2023-06-21T18:30:00.000Z",
-        "funds_managed_count": 46
+        "funds_managed_count": 43
       },
       {
         "name": "Rahul Baijal",
@@ -172,8 +172,8 @@
       }
     ],
     "aum": 10709.1728,
-    "return_1m": 4.39,
-    "return_6m": 24.44,
-    "return_1y": 36.38
+    "return_1m": 3.77,
+    "return_6m": 23.7,
+    "return_1y": 33.37
   }
 ]
