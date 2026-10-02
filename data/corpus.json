@@ -4,8 +4,8 @@
     "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
     "category": "Equity",
     "sub_category": "Mid Cap",
-    "nav": 220.579,
-    "nav_date": "30-Sep-2026",
+    "nav": 219.441,
+    "nav_date": "01-Oct-2026",
     "expense_ratio": "0.76",
     "exit_load": "Exit load of 1% if redeemed within 1 year.",
     "min_sip": 100,
@@ -29,18 +29,18 @@
       }
     ],
     "aum": 108324.5467,
-    "return_1m": -6.95,
-    "return_6m": 10.61,
-    "return_1y": 4.16
+    "return_1m": -7.17,
+    "return_6m": 8.23,
+    "return_1y": 3.29
   },
   {
     "scheme_name": "HDFC Large Cap Fund Direct Growth",
     "url": "https://groww.in/mutual-funds/hdfc-large-cap-fund-direct-growth",
     "category": "Equity",
     "sub_category": "Large Cap",
-    "nav": 1161.706,
-    "nav_date": "30-Sep-2026",
-    "expense_ratio": "1.03",
+    "nav": 1151.92,
+    "nav_date": "01-Oct-2026",
+    "expense_ratio": "1.04",
     "exit_load": "Exit load of 1% if redeemed within 1 year",
     "min_sip": 100,
     "riskometer": "Moderately High Riskometer",
@@ -63,18 +63,18 @@
       }
     ],
     "aum": 39933.3663,
-    "return_1m": -6.71,
-    "return_6m": 4.91,
-    "return_1y": -4.47
+    "return_1m": -6.9,
+    "return_6m": 2.74,
+    "return_1y": -6.15
   },
   {
     "scheme_name": "HDFC Small Cap Fund Direct Growth",
     "url": "https://groww.in/mutual-funds/hdfc-small-cap-fund-direct-growth",
     "category": "Equity",
     "sub_category": "Small Cap",
-    "nav": 156.267,
-    "nav_date": "30-Sep-2026",
-    "expense_ratio": "0.78",
+    "nav": 155.006,
+    "nav_date": "01-Oct-2026",
+    "expense_ratio": "0.79",
     "exit_load": "Exit load of 1% if redeemed within 1 year",
     "min_sip": 100,
     "riskometer": "Moderately High Riskometer",
@@ -97,17 +97,17 @@
       }
     ],
     "aum": 41890.8613,
-    "return_1m": -2.91,
-    "return_6m": 15.43,
-    "return_1y": -1.76
+    "return_1m": -3.71,
+    "return_6m": 11.24,
+    "return_1y": -2.94
   },
   {
     "scheme_name": "HDFC Gold ETF Fund of Fund Direct Plan Growth",
     "url": "https://groww.in/mutual-funds/hdfc-gold-etf-fund-of-fund-direct-plan-growth",
     "category": "Commodities",
     "sub_category": "Gold",
-    "nav": 45.8842,
-    "nav_date": "30-Sep-2026",
+    "nav": 45.8219,
+    "nav_date": "01-Oct-2026",
     "expense_ratio": "0.2",
     "exit_load": "Exit load of 1%, if redeemed within 15 days.",
     "min_sip": 100,
@@ -131,17 +131,17 @@
       }
     ],
     "aum": 12359.1573,
-    "return_1m": -7.07,
-    "return_6m": 0.69,
-    "return_1y": 26.46
+    "return_1m": -3.2,
+    "return_6m": -1.47,
+    "return_1y": 24.22
   },
   {
     "scheme_name": "HDFC Defence Fund Direct Growth",
     "url": "https://groww.in/mutual-funds/hdfc-defence-fund-direct-growth",
     "category": "Equity",
     "sub_category": "Thematic",
-    "nav": 30.72,
-    "nav_date": "30-Sep-2026",
+    "nav": 30.224,
+    "nav_date": "01-Oct-2026",
     "expense_ratio": "0.89",
     "exit_load": "Exit load of 1%, if redeemed within 1 year.",
     "min_sip": 100,
@@ -172,8 +172,8 @@
       }
     ],
     "aum": 11477.5929,
-    "return_1m": -2.93,
-    "return_6m": 36.67,
-    "return_1y": 26.32
+    "return_1m": -3.81,
+    "return_6m": 28.63,
+    "return_1y": 22.63
   }
 ]
