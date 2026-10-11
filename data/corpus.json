@@ -6,7 +6,7 @@
     "sub_category": "Mid Cap",
     "nav": 219.816,
     "nav_date": "09-Oct-2026",
-    "expense_ratio": "0.76",
+    "expense_ratio": "0.75",
     "exit_load": "Exit load of 1% if redeemed within 1 year.",
     "min_sip": 100,
     "riskometer": "Moderately High",
@@ -31,7 +31,7 @@
     "aum": 101856.0604,
     "return_1m": -5.36,
     "return_6m": 3.4,
-    "return_1y": 0.69
+    "return_1y": 1.51
   },
   {
     "scheme_name": "HDFC Large Cap Fund Direct Growth",
@@ -65,7 +65,7 @@
     "aum": 37293.9508,
     "return_1m": -4.65,
     "return_6m": -1.79,
-    "return_1y": -7.54
+    "return_1y": -6.83
   },
   {
     "scheme_name": "HDFC Small Cap Fund Direct Growth",
@@ -99,7 +99,7 @@
     "aum": 40800.8095,
     "return_1m": -3.4,
     "return_6m": 6.09,
-    "return_1y": -4.58
+    "return_1y": -4.04
   },
   {
     "scheme_name": "HDFC Gold ETF Fund of Fund Direct Plan Growth",
@@ -133,7 +133,7 @@
     "aum": 12013.27,
     "return_1m": -2.52,
     "return_6m": -0.48,
-    "return_1y": 18.96
+    "return_1y": 20.5
   },
   {
     "scheme_name": "HDFC Defence Fund Direct Growth",
@@ -174,6 +174,6 @@
     "aum": 11493.3887,
     "return_1m": -7.27,
     "return_6m": 18.38,
-    "return_1y": 18.53
+    "return_1y": 17.51
   }
 ]
