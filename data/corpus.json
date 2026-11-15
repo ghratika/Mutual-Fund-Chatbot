@@ -31,7 +31,7 @@
     "aum": 100687.07,
     "return_1m": 3.8,
     "return_6m": 5.99,
-    "return_1y": 2.7
+    "return_1y": 2.38
   },
   {
     "scheme_name": "HDFC Large Cap Fund Direct Growth",
@@ -65,7 +65,7 @@
     "aum": 37466.3,
     "return_1m": 9.11,
     "return_6m": 8.83,
-    "return_1y": 0.48
+    "return_1y": -0.34
   },
   {
     "scheme_name": "HDFC Small Cap Fund Direct Growth",
@@ -99,7 +99,7 @@
     "aum": 38960.36,
     "return_1m": 0.36,
     "return_6m": 3.33,
-    "return_1y": -3.89
+    "return_1y": -3.68
   },
   {
     "scheme_name": "HDFC Gold ETF Fund of Fund Direct Plan Growth",
@@ -133,7 +133,7 @@
     "aum": 11488.11,
     "return_1m": -7.54,
     "return_6m": -14.84,
-    "return_1y": 9.66
+    "return_1y": 6.24
   },
   {
     "scheme_name": "HDFC Defence Fund Direct Growth",
@@ -174,6 +174,6 @@
     "aum": 11130.7,
     "return_1m": -0.57,
     "return_6m": 8.48,
-    "return_1y": 20.04
+    "return_1y": 20.34
   }
 ]
